@@ -31,7 +31,3 @@ export async function createNote(title, description) {
 
     return getNote(result.insertId);
 }
-
-const notes = await getNote(1);
-const created = await createNote('third one', 'this is my title using js');
-console.log(created);
